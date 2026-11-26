@@ -10,6 +10,8 @@ function Navbar() {
       <div className="flex gap-6">
         <Link to="/" className="hover:text-yellow-400">Home</Link>
         <Link to="/cart" className="hover:text-yellow-400">Cart</Link>
+        <Link to="/services" className="hover:text-yellow-400">Services</Link>
+        <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
       </div>
     </nav>
   )
