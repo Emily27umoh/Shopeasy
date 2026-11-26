@@ -12,7 +12,7 @@ function App() {
     <div>
       <Navbar />
 
-      <main className="p-6">
+      <main className=" flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
