@@ -7,8 +7,8 @@ function Navbar() {
   const { totalItems } = useCart()
   const [showLogin, setShowLogin] = useState(false)
   return (
-    <nav className="bg-white text-gray-900 px-6 py-4 flex justify-between items-center">
-      <Link to="/" className="text-xl font-bold text-green-700">
+    <nav className="bg-emerald-500 text-white px-6 py-4 flex justify-between items-center">
+      <Link to="/" className="text-xl font-bold text-white">
         ShopEasy
       </Link> 
 
@@ -19,7 +19,7 @@ function Navbar() {
         <Link to="/shop" className="hover:text-yellow-400">Shop</Link>
         <Link to="/contact" className="hover:text-yellow-400">Contact</Link>
       </div>
-      <button onClick={() => setShowLogin(true)} className="bg-green-700 h-8 text-white font-semibold px-4 rounded-md hover:bg-yellow-300"> Login </button>
+      <button onClick={() => setShowLogin(true)} className="bg-white h-8 text-emerald-500 text-sm px-4 rounded-md hover:bg-yellow-300"> Login </button>
       {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
     </nav>
   )

@@ -53,7 +53,7 @@ function Cart() {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-20 h-20 object-cover rounded-lg bg-gray-100"
+                 className="w-20 h-20 object-contain rounded-lg bg-white border"
                 />
 
                 <div className="flex-1 min-w-35">
