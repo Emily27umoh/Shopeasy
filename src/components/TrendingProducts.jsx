@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { useCart } from '../context/CartContext'
 
 // 👇 EDIT THIS LIST: use YOUR image names
 const products = [
@@ -24,6 +25,7 @@ function formatPrice(amount) {
 }
 
 function TrendingProducts() {
+const { addToCart } = useCart()
   const sliderRef = useRef(null)
 
   function scroll(direction) {
@@ -84,8 +86,7 @@ function TrendingProducts() {
                   {formatPrice(p.oldPrice)}
                 </span>
               </p>
-
-              <button className="mt-3 w-full bg-green-700 text-white rounded-lg py-2 text-sm font-semibold hover:bg-green-800">
+              <button  onClick={() => addToCart(p)} className="mt-3 w-full bg-green-700 text-white rounded-lg py-2 text-sm font-semibold hover:bg-green-800">
                 Add to Cart
               </button>
             </div>

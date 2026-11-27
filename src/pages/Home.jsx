@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import Categories from '../components/Categories'
 import TrendingProducts from '../components/TrendingProducts'
 
+
 function Home() {
   return (
     <div>
